@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.generate {
+    background: #007bff;
+    color: white;
+}
+
+.copy {
+    background: #28a745;
+    color: white;
+}
+
+.download {
+    background: #6c757d;
+    color: white;
+}
+
+.output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.send {
+    background: #ff9800;
+    color: white;
+}

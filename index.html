@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status Drafter Tool</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("3w20YS4YJcGInRqEN");
+        })();
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Status Drafter Tool</h1>
+
+    <label>Employee Name</label>
+    <input type="text" id="name">
+
+    <label>Project Name</label>
+    <input type="text" id="project">
+
+    <label>Status Type</label>
+    <select id="statusType">
+        <option>Daily Status</option>
+        <option>Weekly Status</option>
+    </select>
+
+    <label>Recipient Email</label>
+    <input type="email" id="toEmail" placeholder="manager@email.com">
+
+    <label>Tasks Completed</label>
+    <textarea id="completed" rows="3"></textarea>
+
+    <label>Tasks In Progress</label>
+    <textarea id="progress" rows="3"></textarea>
+
+    <label>Blockers / Issues</label>
+    <textarea id="blockers" rows="3"></textarea>
+
+    <button class="generate" onclick="generateStatus()">Generate Status</button>
+
+    <div class="output" id="output"></div>
+
+    <button class="copy" onclick="copyStatus()">Copy to Clipboard</button>
+    <button class="download" onclick="downloadStatus()">Download as Text File</button>
+    <button class="send" onclick="sendEmail()">Send via Email</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
